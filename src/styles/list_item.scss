@@ -1,0 +1,162 @@
+.list-item {
+  @extend %flex-row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  border-left: 5px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px $dark-cyan;
+}
+
+.list-item__size{
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 10px;
+  width: 80%;
+  max-width: 1110px;
+  min-width: 300px;
+}
+
+.list-item__featured {
+  border-left: 5px solid $primary-color;
+}
+
+.list-item__content {
+  position: relative;
+  @extend %flex-row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.list-item__img{
+  margin: 24px;
+  width: 86px;
+}
+
+.job-info__company {
+  @extend %flex-row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+.list-item__job-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 19rem;
+  div, h2{
+  margin: 0 7px 7px 7px;
+  }
+}
+
+
+
+.list-item__details{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+
+.filter-tag__btn {
+  background: $filter-color;
+  border: 1px solid transparent;
+  color: $primary-color;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-tag__btn:hover{
+  background: $primary-color;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+
+.filter-tag__position {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.list-item__filter-tags{
+  display: flex;
+  width: 100%;
+  max-width: inherit;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+  hr {
+    display: none;
+  }
+}
+
+.tag{
+  padding: 5px 5px 0px 5px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  color: white;
+}
+
+.tag__new{
+  background: $primary-color;
+}
+.tag__featured{
+  background: $darker-cyan;
+}
+@media all and (max-width: 768px) {
+  .list-item__content{
+    justify-content: space-around;
+    min-width: 390px;
+  }
+  .list-item{
+    flex-direction: column;
+  }
+  .list-item__filter-tags {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    hr {
+      display: block;
+      border: 1px solid $dark-cyan;
+      width: 95%;
+    }
+  }
+
+}
+
+
+@media all and (max-width: 520px) {
+    *{
+      font-size: 14px;
+    }
+
+  .list-item__content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 18rem;
+    margin-top: 1.5rem;
+
+  }
+  .list-item__img{
+    position: absolute;
+    width: 42px;
+    left: 0px;
+    top: -75px;
+  }
+  }
+
+
+
+
+

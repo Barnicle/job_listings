@@ -1,0 +1,60 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+$font-stack: 'Spartan', sans-serif;
+
+//COLORS
+$primary-color: hsl(180, 29%, 50%);
+$background-color: hsl(180, 52%, 96%);
+$filter-color: hsl(180, 31%, 95%);
+$dark-cyan: hsl(180, 8%, 52%);
+$darker-cyan: hsl(180, 14%, 20%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background: $background-color;
+  min-width: 375px;
+  width: auto;
+  box-sizing: border-box;
+  h2{
+    font-size: 1.2rem;
+    word-spacing: 5px;
+  }
+}
+
+
+.app, .list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list{
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+%flex-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+@import './header.scss';
+@import './list_item.scss';
