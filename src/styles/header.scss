@@ -3,17 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: url(../../build/images/bg-header-desktop.svg) 35%;
+  background: url('/bg-header-desktop.svg') 35%;
   background-color: $primary-color;
-
 }
-.header__size{
+.header__size {
   margin-bottom: 65px;
   height: 156px;
   width: 100%;
 }
 
-.filter-list__container{
+.filter-list__container {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -26,8 +25,7 @@
   border-radius: 10px;
 }
 
-
-.filter-list{
+.filter-list {
   @extend %flex-row;
   justify-content: flex-start;
   align-items: center;
@@ -35,17 +33,17 @@
   margin: 5px;
   padding: 5px;
 }
-.filter-list__content{
+.filter-list__content {
   margin-right: 10px;
   display: flex;
   align-items: center;
 }
-.filter__name{
+.filter__name {
   padding: 5px;
   border-radius: 5px 0 0 5px;
   color: $primary-color;
 }
-.filter__delete-btn{
+.filter__delete-btn {
   background: $primary-color;
   border-radius: 0 5px 5px 0;
   color: #ffffff;
@@ -55,12 +53,11 @@
   outline: none;
 }
 
-.filter__cancel:hover{
+.filter__cancel:hover {
   background: $darker-cyan;
-
 }
 
-.clear-all{
+.clear-all {
   color: $primary-color;
   font-weight: 700;
   line-height: 13px;
