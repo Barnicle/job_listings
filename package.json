@@ -1,7 +1,7 @@
 {
   "name": "static-job-listings",
   "version": "1.0.0",
-  "description": "![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 4444",
