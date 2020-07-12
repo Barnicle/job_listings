@@ -4,4 +4,4 @@
 Адаптирован под 375px, 1440px;<br/>
 /build/ собранный проект<br/>
 Для запуска откройте /build/index.html<br/>
-[Live Version](https://ambitious-succinct-enemy.glitch.me/)
+[Live Version](https://job-listings-nu.vercel.app/)
