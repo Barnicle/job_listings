@@ -9,7 +9,7 @@
   box-shadow: 0 20px 20px $dark-cyan;
 }
 
-.list-item__size{
+.list-item__size {
   margin: 1rem 1rem 2rem 1rem;
   padding: 10px;
   width: 80%;
@@ -29,7 +29,7 @@
   width: 80%;
 }
 
-.list-item__img{
+.list-item__img {
   margin: 24px;
   width: 86px;
 }
@@ -39,7 +39,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-
 }
 
 .list-item__job-info {
@@ -47,20 +46,17 @@
   flex-direction: column;
   flex-wrap: nowrap;
   width: 19rem;
-  div, h2{
-  margin: 0 7px 7px 7px;
+  div,
+  h2 {
+    margin: 0 7px 7px 7px;
   }
 }
 
-
-
-.list-item__details{
+.list-item__details {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-
 }
-
 
 .filter-tag__btn {
   background: $filter-color;
@@ -71,12 +67,11 @@
   outline: none;
 }
 
-.filter-tag__btn:hover{
+.filter-tag__btn:hover {
   background: $primary-color;
   color: #ffffff;
   transition: all 0.2s;
 }
-
 
 .filter-tag__position {
   border-radius: 5px;
@@ -84,7 +79,7 @@
   margin: 10px;
 }
 
-.list-item__filter-tags{
+.list-item__filter-tags {
   display: flex;
   width: 100%;
   max-width: inherit;
@@ -98,25 +93,25 @@
   }
 }
 
-.tag{
+.tag {
   padding: 5px 5px 0px 5px;
   text-transform: uppercase;
   border-radius: 15px;
   color: white;
 }
 
-.tag__new{
+.tag__new {
   background: $primary-color;
 }
-.tag__featured{
+.tag__featured {
   background: $darker-cyan;
 }
 @media all and (max-width: 768px) {
-  .list-item__content{
+  .list-item__content {
     justify-content: space-around;
     min-width: 390px;
   }
-  .list-item{
+  .list-item {
     flex-direction: column;
   }
   .list-item__filter-tags {
@@ -131,14 +126,12 @@
       width: 95%;
     }
   }
-
 }
 
-
 @media all and (max-width: 520px) {
-    *{
-      font-size: 14px;
-    }
+  * {
+    font-size: 14px;
+  }
 
   .list-item__content {
     justify-content: flex-start;
@@ -146,17 +139,11 @@
     width: 100%;
     min-width: 18rem;
     margin-top: 1.5rem;
-
   }
-  .list-item__img{
+  .list-item__img {
     position: absolute;
     width: 42px;
     left: 0px;
     top: -75px;
   }
-  }
-
-
-
-
-
+}
