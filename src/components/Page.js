@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import data from '../data.json';
-import Filters from './filters';
-import List from './list';
+import Filters from './Filters';
+import List from './List';
 
 export default class App extends Component {
   state = {
