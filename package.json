@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next -p 4444",
     "start": "next start",
-    "build": "next run build"
+    "build": "next build"
   },
   "browserslist": {
     "production": [
